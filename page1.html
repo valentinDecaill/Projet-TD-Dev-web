@@ -2,20 +2,25 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <title>Modèle 3D</title>
-  <!-- Charger le script depuis un CDN -->
-  <script type="module"
-          src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <style>
-    model-viewer { width: 100%; height: 500px; }
-  </style>
+  <title>page1</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="page1.css" />   
 </head>
 <body>
-  <!-- Charge un fichier GLB/GLTF, offre zoom, rotation, AR -->
-  <model-viewer src="test.glb"
-                alt="Description du modèle"
-                auto-rotate camera-controls ar
-                style="background:#eaeaea;"></model-viewer>
+  <model-viewer
+    src="test3.glb"
+    alt="Description du modèle"
+    uto-rotate camera-controls ar
+    style="background:#eaeaea;">
+  </model-viewer>
+
+  <nav>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </nav>
+  
 </body>
 </html>
 
