@@ -53,7 +53,7 @@ grid-template-columns: minmax 320px, 1fr;
 gap: 35px;
 }
 
-.card {
+.case {
 background: white;
 border-radius: 25px;
 padding: 20px;
