@@ -6,13 +6,6 @@
     box-sizing: border-box;
 }
 
-model-viewer {
-    margin-top: 0;
-    margin-left: 0;
-    width: 100%;
-    height: 300px;
-    display: none;
-}
 body{
     background: linear-gradient(180deg, #6b36b5, #fd86d1);
 }
@@ -152,4 +145,44 @@ nav{
 
 #titre:hover h2{
     opacity: 1;
+}
+
+
+
+.savoir-plus{
+    margin-left: 40%;
+    margin-top: 220px;
+}
+.savoir-plus h1{
+    font-size: 2em;
+}  
+.savoir-plus span{
+    vertical-align: middle;
+    font-size: 1.3em !important;
+}
+
+
+.qui{
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 20%;
+    height: auto;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 10px solid transparent;
+    
+    background-image:
+    
+    linear-gradient(white, white),
+    linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-size: auto, 200% 100%;
+    background-position: 0 0, 0% 50%;
+    animation: moveGradient 3s linear infinite;
+    color: #000;
 }
