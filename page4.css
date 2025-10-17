@@ -68,39 +68,3 @@ nav{
     margin-left: 10px;
     position: fixed;
 }
-/* main ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-#banner{
-    background-color: rgb(195, 195, 195);
-    width: 100%;
-    aspect-ratio: 6/1;
-}
-#titre{
-    display: block;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 10em;
-    width: 40%;
-    margin-top: 50px;
-    margin-left: 30%;
-    height: auto;
-    padding: 20px;
-    border: 10px solid transparent;
-    
-    background-image:
-      linear-gradient(white, white),
-      linear-gradient(90deg, #ff8282, #ffb482, #ffffff, #82d4ff, #8282ff, #ff8282);
-    background-clip: padding-box, border-box;
-    background-origin: border-box;
-    background-size: auto, 200% 100%;
-    background-position: 0 0, 0% 50%;
-    animation: moveGradient 6s linear infinite;
-    color: #000;
-}
-
-@keyframes moveGradient {
-  0%   { background-position: 0 0, 0% 50%; }
-  50%  { background-position: 0 0, 100% 50%; }
-  100% { background-position: 0 0, 0% 50%; }
-}
-}
