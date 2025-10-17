@@ -1,3 +1,5 @@
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 * {
     margin: 0;
     padding: 0; 
@@ -11,19 +13,56 @@ model-viewer {
     height: 300px;
     display: none;
 }
+
+
+
+
+
+
+/* nav bar ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 24;
+  font-size: 128px;
+  font-size: 3em !important;
+  transition: all 0.1s ease-in-out;
 }
+.navblock {
+    background-color: rgba(117, 117, 117, 0.735);
+    padding: 50px 20px;
+    margin-left: 10px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.navblock .nom-menu {
+    display: block;
+    text-align: center;
+    visibility: hidden;
+    color: white;
+    font-weight: bold;
+}
+.navblock:hover .nom-menu{
+    visibility: visible;
+    
+}
+.navblock:hover .material-symbols-outlined {
+    color: white;
+}
+.navblock:hover {
+    background-color: rgba(117, 117, 117, 0.935);
+    transform: scale(1.05);
+}
+
 nav{
-    margin-top: 300px;
+    margin-top: 25vh;
     margin-left: 10px;
     position: fixed;
 }
-.banniere{
-    width: 100%;
-    aspect-ratio: 3.27;
-}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

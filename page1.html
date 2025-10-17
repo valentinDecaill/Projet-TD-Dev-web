@@ -9,13 +9,11 @@
 
   <body>
 
-    <img class="banniere" src="accueil-fichier/banniere.gif" alt="banniere">
-
     <nav>
-      <div class="accueil"><span class="material-symbols-outlined">home</span></div>
-      <div class="shop"><span class="material-symbols-outlined">shopping_bag</span></div>
-      <div class="panier"><span class="material-symbols-outlined">shopping_cart_checkout</span></div>
-      <div class="a-propos"><span class="material-symbols-outlined">info</span></div>
+      <div class="navblock accueil"><span class="material-symbols-outlined">home</span><span class="nom-menu">accueil</span></div>
+      <div class="navblock shop"><span class="material-symbols-outlined">shopping_bag</span><span class="nom-menu">shop</span></div>
+      <div class="navblock panier"><span class="material-symbols-outlined">shopping_cart_checkout</span><span class="nom-menu">panier</span></div>
+      <div class="navblock a-propos"><span class="material-symbols-outlined">info</span><span class="nom-menu">info</span></div>
     </nav>
 
     <model-viewer 
@@ -27,6 +25,24 @@
     ></model-viewer>
 
 
+    <script>
 
+      document.getElementsByClassName('accueil')[0].onclick = function() {
+        window.location.href = 'page1.html';
+      };
+      
+      document.getElementsByClassName('shop')[0].onclick = function() {
+        window.location.href = 'page2.html';
+      }; 
+
+      document.getElementsByClassName('panier')[0].onclick = function() {
+        window.location.href = 'page3.html';
+      }; 
+
+      document.getElementsByClassName('a-propos')[0].onclick = function() {
+        window.location.href = 'page4.html';
+      }; 
+
+    </script>
   </body>
 </html>
