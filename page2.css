@@ -16,23 +16,6 @@ letter-spacing: 1px;
 text-shadow: 2px 2px #e76f51;
 }
 
-nav {
-background: #ff9f1c;
-text-align: center;
-padding: 12px;
-}
-
-nav a {
-text-decoration: none;
-color: white;
-margin: 0 20px;
-font-weight: bold;
-font-size: 18px;
-}
-
-nav a:hover {
-text-decoration: underline;
-}
 
 main {
 max-width: 1300px;
