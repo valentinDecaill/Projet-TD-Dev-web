@@ -1,1 +1,41 @@
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="page3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
 
+  <body>
+
+    <nav>
+      <div class="navblock accueil"><span class="material-symbols-outlined">home</span><span class="nom-menu">accueil</span></div>
+      <div class="navblock shop"><span class="material-symbols-outlined">shopping_bag</span><span class="nom-menu">shop</span></div>
+      <div class="navblock panier"><span class="material-symbols-outlined">shopping_cart_checkout</span><span class="nom-menu">panier</span></div>
+      <div class="navblock a-propos"><span class="material-symbols-outlined">info</span><span class="nom-menu">info</span></div>
+    </nav>
+
+
+
+
+    <script>
+
+      document.getElementsByClassName('accueil')[0].onclick = function() {
+        window.location.href = 'page1.html';
+      };
+      
+      document.getElementsByClassName('shop')[0].onclick = function() {
+        window.location.href = 'page2.html';
+      }; 
+
+      document.getElementsByClassName('panier')[0].onclick = function() {
+        window.location.href = 'page3.html';
+      }; 
+
+      document.getElementsByClassName('a-propos')[0].onclick = function() {
+        window.location.href = 'page4.html';
+      }; 
+
+    </script>
+  </body>
+</html>
