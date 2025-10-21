@@ -1,6 +1,6 @@
 body {
 font-family: "Comic Sans MS", "Poppins", sans-serif;
-background: linear-gradient(180deg, #82d4ff, #00dcc2);
+background: linear-gradient(180deg, #2596be, #aafef8);
 margin: 0;
 color: #333;
 }
@@ -8,58 +8,61 @@ color: #333;
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 300,
   'GRAD' 0,
   'opsz' 24;
-  font-size: 128px;
-  font-size: 3em !important;
-  transition: all 0.1s ease-in-out;
+  font-size: 2em !important;
+  transition: all 0.2s ease-in-out;
 }
 .navblock {
-    background-color: rgba(117, 117, 117, 0.735);
-    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffabde;
+    padding: 10px 5px;
     margin-left: 10px;
     border-radius: 50px;
     margin-bottom: 20px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    border: 5px solid transparent;
+    
+    background-image:
+    
+    linear-gradient(white, white),
+    linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-size: auto, 200% 100%;
+    background-position: 0 0, 0% 50%;
+    animation: moveGradient 3s linear infinite;
+    color: #000;
 }
 .navblock .nom-menu {
+    font-size: 10px;
     display: block;
     text-align: center;
-    visibility: hidden;
-    color: white;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
     font-weight: bold;
 }
 .navblock:hover .nom-menu{
-    visibility: visible;
+    opacity: 1;
     
 }
 .navblock:hover .material-symbols-outlined {
-    color: white;
+    font-variation-settings: 'wght' 400;
 }
 .navblock:hover {
-    background-color: rgba(117, 117, 117, 0.935);
+    background-color: #daaeff;
     transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 nav{
-    margin-top: 25vh;
+    margin-top: 30vh;
     margin-left: 10px;
     position: fixed;
 }
-
-header {
-background: #ffb703;
-color: white;
-padding: 25px;
-text-align: center;
-font-size: 32px;
-font-weight: bold;
-letter-spacing: 1px;
-text-shadow: 2px 2px #e76f51;
-}
-
 
 main {
 max-width: 1300px;
@@ -69,14 +72,14 @@ padding: 0 20px;
 
 h2 {
 text-align: center;
-color: #219ebc;
+color: #ffabde ;
 font-size: 30px;
 margin-bottom: 40px;
 }
 
 .grid {
 display: flex;
-flex-direction: minmax 100px, 1fr;
+grid-template-columns: minmax 100px, 1fr;
 gap: 35px;
 }
 
@@ -95,15 +98,16 @@ box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .case img {
-width: 100%;
+width: auto;
 height: 100px;
+
 object-fit: cover;
 border-radius: 18px;
 margin-bottom: 15px;
 }
 
 .case h3 {
-color: #fb5607;
+color: #daaeff;
 font-size: 22px;
 margin-bottom: 8px;
 }
@@ -132,10 +136,10 @@ background: #118ab2;
 
 }
 footer {
-background: #ffd166;
+background: #ffabde;
 text-align: center;
 padding: 25px;
-color: #333;
+color: #aed0ff;
 font-weight: bold;
 margin-top: 70px;
 font-size: 18px;
