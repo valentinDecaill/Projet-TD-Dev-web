@@ -62,6 +62,7 @@ nav{
     margin-top: 30vh;
     margin-left: 10px;
     position: fixed;
+    z-index: 100;
 }
 
 main {
@@ -77,10 +78,12 @@ font-size: 30px;
 margin-bottom: 40px;
 }
 
-.grid {
+.flex {
 display: flex;
-grid-template-columns: minmax 100px, 1fr;
+flex-direction: minmax 100px, 1fr;
 gap: 35px;
+ animation: scrolling 10s linear infinite;
+ z-index: 1;
 }
 
 .case {
@@ -157,7 +160,21 @@ font-size: 18px;
     width: 100%;
   }
 }
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+     &:hover.flex {
+      animation-play-state: paused;
+    }
 
+ 
+
+  
 
     
 
