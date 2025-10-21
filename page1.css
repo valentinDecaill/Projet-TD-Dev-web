@@ -154,10 +154,18 @@ nav{
 .savoir-plus{
     margin-left: 40%;
     margin-top: 17%;
+    width: 300px;
+    cursor: pointer;
 }
-.savoir-plus h1{
-    font-size: 2em;
-}  
+.savoir-plus:hover{
+    animation: fleche 1s linear infinite;
+}
+
+@keyframes fleche {
+  0%   { transform: scale(1.0); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1.0); }
+}
 .savoir-plus span{
     vertical-align: middle;
     font-size: 1.3em !important;
@@ -242,4 +250,27 @@ nav{
 }
 model-viewer {
     width: 100%;
+}
+.nom-arme{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.prix-arme{
+    font-size: 1em;
+    color: #555;
+    margin-top: 5px;
+}
+.savoir-arme{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffabde;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.savoir-arme:hover{
+    background-color: #daaeff;
+    transform: scale(1.05);
 }

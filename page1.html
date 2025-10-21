@@ -24,7 +24,7 @@
 
       <div id="titre"><h1>bienvenue</h1><h2>cliquez pour voir nos produit !</h2></div>
 
-      <div class="savoir-plus"><h1>En savoir plus<span class="material-symbols-outlined">arrow_cool_down</span></h1></div>
+      <div class="savoir-plus" id="scroll"><h1>En savoir plus<span class="material-symbols-outlined">arrow_cool_down</span></h1></div>
       
       <div class="qui">
 
@@ -45,6 +45,9 @@
             auto-rotate
             interaction-prompt="none"
           ></model-viewer>
+          <div class="nom-arme">fusil 1</div>
+          <div class="prix-arme">199€</div>
+          <button class="savoir-arme">En savoir plus</button>
         </div>
         <div class="prod prod2">
           <model-viewer 
@@ -54,6 +57,9 @@
             auto-rotate
             interaction-prompt="none"
           ></model-viewer>   
+          <div class="nom-arme">fusil 2</div>
+          <div class="prix-arme">1999.9€</div>
+          <button class="savoir-arme">En savoir plus</button>
         </div>
         <div class="prod prod3">
           <model-viewer 
@@ -63,6 +69,9 @@
             auto-rotate
             interaction-prompt="none"
           ></model-viewer>
+          <div class="nom-arme">fusil 3</div>
+          <div class="prix-arme">69€</div>
+          <button class="savoir-arme">En savoir plus</button>
         </div>
 
       </div>
@@ -92,6 +101,19 @@
         window.location.href = 'page2.html';
       };
 
+    </script>
+    <script>
+      const scrollButton = document.getElementById('scroll');
+
+        
+        scrollButton.addEventListener('click', () => {
+
+            window.scroll({
+                top: document.body.scrollHeight - 750 ,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
   </body>
 </html>
