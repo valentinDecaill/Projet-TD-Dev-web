@@ -96,14 +96,23 @@ margin-bottom: 150px;
 .girl1page2 {
     position: absolute;
   top: -190px;      
-  right: 30px;     
+  right: 40px;     
   transform: translateY(-50px); 
   width: 200px;
   height: auto;
   pointer-events: none;
   z-index: 1;
-
 }
+.girl2page2 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    z-index: 40;
+    right: 0px;
+    top: 1230px;
+    pointer-events: none;
+}
+
 
 .flex {
     position: relative;
