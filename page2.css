@@ -79,9 +79,9 @@ margin-bottom: 150px;
 }
 .girl1page2 {
     position: absolute;
-  top: 0;       /* ajuste à la verticale */
-  right: 0;     /* la place au-dessus de la 3e case */
-  transform: translateY(-50px); /* remonte un peu si besoin */
+  top: 0;      
+  right: 0;     
+  transform: translateY(-50px); 
   width: 200px;
   height: auto;
   pointer-events: none;
