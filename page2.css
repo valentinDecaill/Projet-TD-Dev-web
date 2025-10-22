@@ -77,18 +77,20 @@ color: #ffabde ;
 font-size: 30px;
 margin-bottom: 150px;
 }
-.girl1page2{
-    width: 400px;
-    height: auto;
+.girl1page2 {
     position: absolute;
-    z-index: 10;
-    margin-left: 250px;
-    margin-top: 80px;
-    pointer-events: none;
+  top: 0;       /* ajuste à la verticale */
+  right: 0;     /* la place au-dessus de la 3e case */
+  transform: translateY(-50px); /* remonte un peu si besoin */
+  width: 200px;
+  height: auto;
+  pointer-events: none;
+  z-index: 10;
+
 }
 
 .flex {
-
+    position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
