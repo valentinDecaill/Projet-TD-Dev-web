@@ -75,16 +75,27 @@ h2 {
 text-align: center;
 color: #ffabde ;
 font-size: 30px;
-margin-bottom: 40px;
+margin-bottom: 150px;
+}
+.girl1page2{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    z-index: 10;
+    margin-left: 250px;
+    margin-top: 80px;
+    pointer-events: none;
 }
 
 .flex {
-display: flex;
-flex-direction: minmax 100px, 1fr;
-gap: 35px;
- animation: scrolling 10s linear infinite;
- z-index: 1;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  justify-items: center;
+  z-index: 30;
 }
+
 
 .case {
 background: white;
@@ -94,7 +105,8 @@ box-shadow: 0 4px 14px rgba(0,0,0,0.15);
 text-align: center;
 transition: transform 0.2s, box-shadow 0.2s;
 animation-duration: 3s;
-  animation-name: slidein;
+   flex: 1 1 calc(33.333% - 35px); 
+  box-sizing: border-box;
 }
 
 .case:hover {
@@ -149,28 +161,7 @@ font-weight: bold;
 margin-top: 70px;
 font-size: 18px;
 }
-@keyframes slidein {
-    from{
 
-    margin-left: 100%;
-    width: 300%;
-      }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-  @keyframes scrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-     &:hover.flex {
-      animation-play-state: paused;
-    }
 
  
 
