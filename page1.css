@@ -8,7 +8,7 @@
 
 body{
     background: linear-gradient(180deg, #6b36b5, #fd86d1);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 
@@ -41,7 +41,7 @@ body{
     
     background-image:
     
-    linear-gradient(white, white),
+    linear-gradient(#edd1f0, #edd1f0),
     linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
     background-clip: padding-box, border-box;
     background-origin: border-box;
@@ -54,13 +54,8 @@ body{
     font-size: 10px;
     display: block;
     text-align: center;
-    opacity: 0;
     transition: all 0.2s ease-in-out;
     font-weight: bold;
-}
-.navblock:hover .nom-menu{
-    opacity: 1;
-    
 }
 .navblock:hover .material-symbols-outlined {
     font-variation-settings: 'wght' 400;
@@ -115,7 +110,7 @@ nav{
     
     background-image:
     
-    linear-gradient(white, white),
+    linear-gradient( #edd1f0, #edd1f0),
     linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
     background-clip: padding-box, border-box;
     background-origin: border-box;
@@ -132,7 +127,7 @@ nav{
 }
 
 #titre h1{
-    font-size: 5em;
+    font-size: 4em;
 }
 
 #titre h2{
@@ -189,7 +184,7 @@ nav{
     
     background-image:
     
-    linear-gradient(white, white),
+    linear-gradient(#edd1f0, #edd1f0),
     linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
     background-clip: padding-box, border-box;
     background-origin: border-box;
@@ -239,7 +234,7 @@ nav{
     
     background-image:
     
-    linear-gradient(white, white),
+    linear-gradient(#edd1f0, #edd1f0),
     linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
     background-clip: padding-box, border-box;
     background-origin: border-box;
@@ -287,7 +282,7 @@ model-viewer {
     height: auto;
     position: absolute;
     z-index: 10;
-    margin-left: 250px;
+    margin-left: 21%;
     margin-top: 80px;
     pointer-events: none;
 }
