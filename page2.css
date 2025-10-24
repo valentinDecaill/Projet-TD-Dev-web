@@ -5,11 +5,14 @@
 }
 body{
     background: linear-gradient(180deg, #6b36b5, #fd86d1);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 
 margin: 0;
 
 }
+
+
+/**navbar**/
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -62,6 +65,7 @@ margin: 0;
     background-color: #daaeff;
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    cursor: none;
 }
 
 nav{
@@ -70,6 +74,7 @@ nav{
     position: fixed;
     z-index: 100;
 }
+/**bannière**/
 
 #banner{
     width: 100%;
@@ -113,13 +118,14 @@ margin-bottom: 150px;
     pointer-events: none;
 }
 
-
+/**case **/
 .flex {
     position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   z-index: 30;
+  animation: scroll 15s linear infinite;
  
 }
 
@@ -203,6 +209,9 @@ transition: 0.2s;
 .btn:hover {
 background: #118ab2;
 
+
+/**footer**/
+
 }
 footer{
     width: 100%;
@@ -227,7 +236,26 @@ footer p{
 .social:hover{
     transform: scale(1.1);
 }
- 
+
+
+
+.flex:hover .case {
+  animation-play-state: paused;
+}
+
+
+@keyframes scroll {
+  0% {
+   
+    transform: translateX(0); 
+  }
+  100% {
+
+    transform: translateX(-50%); 
+  }
+}
+
+
 
   
 
