@@ -1,41 +1,144 @@
-</html>
-<!DOCTYPE html>
-<html>
-  <head>
-  <link rel="stylesheet" href="page3.css">
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panier — PresqueLegal.fr</title>
+  <link rel="stylesheet" href="page3.css" />
+  <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  </head>
+</head>
+<body>
+  <div class="decorations" aria-hidden="true">
+    <div class="bulle b1"></div>
+    <div class="bulle b2"></div>
+    <div class="bulle b3"></div>
+    <img class="girl2" src="accueil-fichier/girl2.png">
+    <img class="girl1" src="accueil-fichier/girl1.png">
+  </div>
 
-  <body>
+  <div class="conteneur" role="main">
+    <header class="apparition" style="animation-delay:0.2s;">
+      <div class="marque">
+        <div class="logo"><img src="favicon.ico"></div>
+        <div>
+          <div class="titre-boutique">PresqueLegal.fr</div>
+          <div class="sous-titre-boutique">Panier • Paiement sécurisé</div>
+        </div>
+      </div>
+      <div class="resume-panier">
+        <div class="titre-resume">Résumé</div>
+        <div class="info-resume">4 articles • Livraison offerte</div>
+      </div>
+    </header>
 
-    <nav>
-      <div class="navblock accueil"><span class="material-symbols-outlined">home</span><span class="nom-menu">accueil</span></div>
-      <div class="navblock shop"><span class="material-symbols-outlined">shopping_bag</span><span class="nom-menu">shop</span></div>
-      <div class="navblock panier"><span class="material-symbols-outlined">shopping_cart_checkout</span><span class="nom-menu">panier</span></div>
-      <div class="navblock a-propos"><span class="material-symbols-outlined">info</span><span class="nom-menu">info</span></div>
-    </nav>
+    <section class="panier apparition" aria-labelledby="titre-panier" style="animation-delay:0.5s;">
+      <h2 id="titre-panier">Votre panier</h2>
+      <p class="intro">Visualisez vos articles en 3D.</p>
 
+      <div class="liste-articles">
+        
+        <article class="article-panier apparition" style="animation-delay:1s;">
+          <div class="apercu apercu-3d">
+            <model-viewer src="3DModel/arm1.glb" alt="arme1"
+              auto-rotate rotation-per-second="20deg" camera-controls="false"
+              disable-zoom shadow-intensity="1" exposure="1.2" environment-image="neutral" ar></model-viewer>
+          </div>
+          <div class="infos-article">
+            <div class="titre-article">Fusil airsoft</div>
+            <div class="details-article">Couleur: grise • Livraison: 2-4 jours</div>
+          </div>
+          <div class="bloc-prix">
+            <div class="prix scintillant">89,00 €</div>
+            <div class="quantite">
+              <button>-</button><span>1</span><button>+</button>
+            </div>
+          </div>
+          <div class="etiquette">Populaire</div>
+        </article>
 
+        
+        <article class="article-panier apparition" style="animation-delay:1.2s;">
+          <div class="apercu apercu-3d">
+            <model-viewer src="3DModel/arm2.glb" alt="arme2"
+              auto-rotate rotation-per-second="15deg" disable-zoom camera-controls="false"
+              shadow-intensity="1" exposure="1.1" environment-image="neutral" ar></model-viewer>
+          </div>
+          <div class="infos-article">
+            <div class="titre-article">Pompe airsoft</div>
+            <div class="details-article">Couleur: grise • Livraison: 2-4 jours</div>
+          </div>
+          <div class="bloc-prix">
+            <div class="prix">1999.9 €</div>
+            <div class="quantite"><button>-</button><span>2</span><button>+</button></div>
+          </div>
+        </article>
 
+        
+        <article class="article-panier apparition" style="animation-delay:1.4s;">
+          <div class="apercu apercu-3d">
+            <model-viewer src="3DModel/arm3.glb" alt="arme3"
+              auto-rotate rotation-per-second="25deg" disable-zoom camera-controls="false"
+              shadow-intensity="1" exposure="1.1" environment-image="neutral" ar></model-viewer>
+          </div>
+          <div class="infos-article">
+            <div class="titre-article">Fusil tactique airsoft</div>
+            <div class="details-article">Couleur: noir • Livraison: 2-4 jours</div>
+          </div>
+          <div class="bloc-prix">
+            <div class="prix">69 €</div>
+            <div class="quantite"><button>-</button><span>1</span><button>+</button></div>
+          </div>
+        </article>
 
-    <script>
+        
+        <article class="article-panier apparition" style="animation-delay:1.6s;">
+          <div class="apercu apercu-3d">
+            <model-viewer src="3DModel/arm4.glb" alt="arme4"
+              auto-rotate rotation-per-second="18deg" disable-zoom camera-controls="false"
+              shadow-intensity="1" exposure="1.15" environment-image="neutral" ar></model-viewer>
+          </div>
+          <div class="infos-article">
+            <div class="titre-article">Fusil lourd airsoft</div>
+            <div class="details-article">Couleur: noir • Livraison: 2-4 jours</div>
+          </div>
+          <div class="bloc-prix">
+            <div class="prix scintillant">199,00 €</div>
+            <div class="quantite"><button>-</button><span>1</span><button>+</button></div>
+          </div>
+        </article>
+      </div>
 
-      document.getElementsByClassName('accueil')[0].onclick = function() {
-        window.location.href = 'page1.html';
-      };
-      
-      document.getElementsByClassName('shop')[0].onclick = function() {
-        window.location.href = 'page2.html';
-      }; 
+      <div class="actions-panier apparition" style="animation-delay:1.8s;">
+        <button class="bouton bouton-secondaire" onclick="window.location.href='page2.html'">
+          Continuer vos achats
+        </button>
+        <div class="supprimer-tout">Supprimer tous les articles</div>
+      </div>
+    </section>
 
-      document.getElementsByClassName('panier')[0].onclick = function() {
-        window.location.href = 'page3.html';
-      }; 
+    <aside class="recapitulatif apparition" style="animation-delay:2s;">
+      <h3>Récapitulatif</h3>
+      <div class="ligne"><span>Sous-total</span><span>4 287,8 €</span></div>
+      <div class="ligne"><span>Livraison</span><span>Offerte</span></div>
+      <div class="ligne"><span>Réduction</span><span>-100,00 €</span></div>
 
-      document.getElementsByClassName('a-propos')[0].onclick = function() {
-        window.location.href = 'page4.html';
-      }; 
+      <div class="total">
+        <span>Total</span>
+        <span style="font-size:20px">4 187,8 €</span>
+      </div>
 
-    </script>
-  </body>
+      <div class="boutons">
+        <button class="bouton bouton-principal pulsation"><img src="img_panier/girl3.png">Procéder au paiement</button>
+        <button class="bouton bouton-secondaire">Payer plus tard</button>
+      </div>
+
+      <div class="note">
+        Paiement sécurisé • Retours sous 30 jours 
+      </div>
+    </aside>
+  </div>
+</body>
 </html>
+
