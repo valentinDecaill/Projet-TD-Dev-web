@@ -6,7 +6,7 @@
 
 ## Membres du groupe
 
-Etudiant 1 :  [mael charton--cautenet](mailto:mael.charton--cautenet@edu.univ-fcomte.fr)  
-Etudiant 2 : [valentin decailloz](mailto:valentin.decailloz@edu.univ-fcomte.fr)   
-Etudiant 3 : [mathis chive](mailto:mathis.chive@edu.univ-fcomte.fr)  
-Etudiant 4 : [kyllian donguy ](mailto:kyllian.donguy@edu.univ-fcomte.fr) 
+Etudiant 1 : mael charton--cautenet
+Etudiant 2 : valentin decailloz
+Etudiant 3 : mathis chive 
+Etudiant 4 : kyllian donguy
