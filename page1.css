@@ -9,6 +9,7 @@
 body{
     background: linear-gradient(180deg, #6b36b5, #fd86d1);
     font-family: Helvetica, Arial, sans-serif;
+    min-width: 217px;
 }
 
 
@@ -147,25 +148,57 @@ nav{
 
 
 
-.savoir-plus{
-    margin-left: 60%;
+.savoir-plus {
+    margin-left: 50%;
     margin-top: 10%;
-    width: 300px;
+    width: 250px;
     cursor: pointer;
-}
-.savoir-plus:hover{
-    animation: fleche 1s linear infinite;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: #daaeff;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    animation: pulse 2s ease-in-out infinite;
 }
 
-@keyframes fleche {
-  0%   { transform: scale(1.0); }
-  50%  { transform: scale(1.1); }
-  100% { transform: scale(1.0); }
-}
 .savoir-plus span{
     vertical-align: middle;
-    font-size: 1.3em !important;
+    font-size: 1.5em !important;
+    margin-left: 10px;
+    transition: transform 0.3s;
 }
+
+.savoir-plus:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    background-color: #ffabde;
+    animation: none;
+}
+
+.savoir-plus:hover span {
+    transform: translateY(3px);
+}
+
+@keyframes pulse {
+  0% { 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2), 0 0 0 0 rgba(255, 171, 222, 0.7); 
+  }
+  70% { 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2), 0 0 0 10px rgba(255, 171, 222, 0); 
+  }
+  100% { 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2), 0 0 0 0 rgba(255, 171, 222, 0); 
+  }
+}
+
+.savoir-plus:hover{
+    animation: none;
+}
+
 
 
 .qui{
@@ -204,7 +237,7 @@ nav{
 
 .produits-h1{
     margin-left: 40%;
-    font-size: 2em;
+    font-size: clamp(2rem, 2vw, 4rem);
     margin-top:100px;
 }
 
@@ -329,5 +362,3 @@ footer p{
 .social:hover{
     transform: scale(1.1);
 }
-
-
