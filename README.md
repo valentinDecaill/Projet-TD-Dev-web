@@ -1,8 +1,6 @@
 # Projet-TD-Dev-web
 
-# 
 [lien du site](https://valentindecaill.github.io/Projet-TD-Dev-web/)
-
 
 ## Membres du groupe
 
@@ -14,5 +12,5 @@
 
 - Etudiant 4 : kyllian donguy a réaliser la page du [panier](https://valentindecaill.github.io/Projet-TD-Dev-web/page3.html)
 # 
-Valentin Decailloz a réaliser la navbar
-Mael Charton--cautenet a choisi le style pour le site
+- Valentin Decailloz a réaliser la navbar
+- Mael Charton--cautenet a choisi le style pour le site
