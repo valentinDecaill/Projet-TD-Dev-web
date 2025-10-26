@@ -1,4 +1,3 @@
-/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Navbar */
+/************************** Navbar et bannière ******************************/
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -41,6 +40,7 @@ body {
     background-position: 0 0, 0% 50%;
     animation: moveGradient 3s linear infinite;
     color: #000;
+    height: 71.64px;
 }
 .navblock .nom-menu {
     font-size: 10px;
@@ -48,6 +48,7 @@ body {
     text-align: center;
     transition: all 0.2s ease-in-out;
     font-weight: bold;
+    
 }
 .navblock:hover .material-symbols-outlined {
     font-variation-settings: 'wght' 400;
@@ -65,8 +66,6 @@ nav{
     position: fixed;
     z-index: 100;
 }
-
-/* Banner & Bar */
 #banner{
     width: 100%;
     aspect-ratio: 8/1;
@@ -77,59 +76,115 @@ nav{
 }
 .barre-hor{
     width: 100%;
-    height: 10px;
+    height: 5px;
     background: linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
     margin-top: -5px;
     margin-bottom: 20px;
 }
-
-
-/* Headings */
-h2 {
-  text-align: center;
-  color: #ffabde;
-  font-size: 30px;
-  margin: 100px 0;
+/*******page avec les animations de défilement ***************************************************************/
+#titrepage2{
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    width: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    height: auto;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 10px solid transparent;
+    
+    background-image:
+    
+    linear-gradient( #edd1f0, #edd1f0),
+    linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-size: auto, 200% 100%;
+    background-position: 0 0, 0% 50%;
+    animation: moveGradient 3s linear infinite;
+    color: #000;
+}
+#soustitrepage2{
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 35%;
+    height: auto;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 8px solid transparent;
+    
+    background-image:
+    
+    linear-gradient( #edd1f0, #edd1f0),
+    linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-size: auto, 200% 100%;
+    background-position: 0 0, 0% 50%;
+    animation: moveGradient 3s linear infinite;
+    color: #000;
+}
+:hover#soustitrepage2{
+  transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    
 }
 
-/* Decorative Images */
-.girl1page2, .girl2page2 {
+.girl1page2 {
   position: absolute;
   width: 200px;
   height: auto;
   pointer-events: none;
 }
+.girl2page2 {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  pointer-events: none;
+}
 .girl1page2 {
-  top: 233px;
+  top: 352px;
   right: 40px;
-  z-index: 1;
+ 
 }
 .girl2page2 {
-  top: 1290px;
+  top: 1430px;
   right: 0;
-  z-index: 40;
+  
 }
 
-/* Flex Container */
 .flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Card Styles */
 .case {
   position: relative;
   background: #fff;
   border-radius: 25px;
   padding: 20px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-  text-align: center;
+
   transition: transform 0.2s, box-shadow 0.2s;
+  background-image: linear-gradient(#edd1f0, #edd1f0), linear-gradient(90deg, #ffabde, #daaeff, #aed0ff, #aafef8);
   overflow: hidden;
   z-index: 10;
   margin-bottom: 0;
   flex-shrink: 0;
   width: 300px;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
 }
 .case:before {
   content: "";
@@ -159,9 +214,10 @@ h2 {
   object-fit: cover;
   border-radius: 18px;
   margin-bottom: 15px;
+ 
 }
 .case h3 {
-  color: #daaeff;
+  color: #000000;
   font-size: 22px;
   margin-bottom: 8px;
 }
@@ -172,8 +228,8 @@ h2 {
   font-size: 20px;
 }
 .btn {
-  background: #06d6a0;
-  color: #fff;
+  background: #daaeff;
+  color: #000000;
   border: none;
   padding: 12px 22px;
   border-radius: 25px;
@@ -185,8 +241,35 @@ h2 {
 .btn:hover {
   background: #118ab2;
 }
+.bandeau-defilant {
+  overflow: hidden;
+  padding-left: 80px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  z-index: 1;
+ 
+}
+.conteneur-animation {
+  display: flex;
+  width: fit-content;
+  gap: 30px;
+  animation-name: defilementDroite;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+ 
+}
+.conteneur-animation.bandeau-5 {
+  animation-duration: 30s;
+}
+.bandeau-defilant:hover .conteneur-animation {
+  animation-play-state: paused;
+}
+@keyframes defilementDroite {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
 
-/****** Footer ******/
+/****** Footer ******************************************************/
 footer {
   width: 100%;
   height: 60px;
@@ -212,27 +295,3 @@ footer p {
   transform: scale(1.1);
 }
 
-/********section bandeau defilant *********/
-.bandeau-defilant {
-  overflow: hidden;
-  padding-left: 80px;
- 
-}
-.conteneur-animation {
-  display: flex;
-  width: fit-content;
-  gap: 30px;
-  animation-name: defilementDroite;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.conteneur-animation.bandeau-5 {
-  animation-duration: 30s;
-}
-.bandeau-defilant:hover .conteneur-animation {
-  animation-play-state: paused;
-}
-@keyframes defilementDroite {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
