@@ -8,7 +8,7 @@
 
 - Etudiant 2 : valentin decailloz a réaliser la page [d'accueil](https://valentindecaill.github.io/Projet-TD-Dev-web/index.html)
 
-- Etudiant 3 : mathis chive a réaliser a réaliser la page [d'inforamation](https://valentindecaill.github.io/Projet-TD-Dev-web/page4.html)
+- Etudiant 3 : mathis chive a réaliser a réaliser la page [d'information](https://valentindecaill.github.io/Projet-TD-Dev-web/page4.html)
 
 - Etudiant 4 : kyllian donguy a réaliser la page du [panier](https://valentindecaill.github.io/Projet-TD-Dev-web/page3.html)
 # 
